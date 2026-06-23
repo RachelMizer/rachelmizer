@@ -1,16 +1,63 @@
-# React + Vite
+# Rachel Mizer — Portfolio Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal portfolio site for Rachel Mizer, Full-Stack Developer & UI/UX Designer based in Clayton, NC. Built to showcase projects, work history, and professional background for prospective employers and collaborators.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** with React Router v7 (client-side SPA)
+- **Vite** for dev server and bundling
+- **Plain CSS** — global stylesheets per page/component, no CSS modules or preprocessors
+- **Google Fonts** — Source Sans 3
+- **Local fonts** — Farmhouse (display), Gentle Hearts (serif headers)
 
-## React Compiler
+## Pages
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Route | Description |
+|---|---|
+| `/` | Hero with profile photo, skills overview, and CTA |
+| `/about` | Bio, Prospective Employer FAQ, and full résumé |
+| `/portfolio` | Project tiles for Orderly, MakeAWay, and FlyWheel |
+| `/contact` | Email and LinkedIn contact cards with availability badge |
 
-## Expanding the Oxlint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```
+src/
+├── assets/
+│   ├── fonts/          # Farmhouse.ttf, GentleHearts-Regular.otf
+│   └── img/            # Profile photos
+├── components/
+│   ├── Navbar.jsx/.css
+│   └── Footer.jsx/.css
+├── pages/
+│   ├── Home.jsx/.css
+│   ├── About.jsx/.css
+│   ├── Portfolio.jsx/.css
+│   └── Contact.jsx/.css
+├── App.jsx             # Router setup
+├── App.css             # Layout (sticky footer, page content)
+├── index.css           # Design tokens, global resets, font-face
+└── main.jsx
+```
+
+## Design Tokens
+
+All colors, spacing, typography, and shadows are defined as CSS custom properties in `src/index.css`:
+
+- `--color-accent` — terracotta (`#b36a64`)
+- `--color-bg` — warm off-white (`#fdf7f5`)
+- `--font-serif` — Gentle Hearts
+- `--font-sans` — Source Sans 3
+
+## Running Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Building
+
+```bash
+npm run build
+```
