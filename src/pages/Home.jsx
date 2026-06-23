@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import profpic from '../assets/img/profpic.png'
+import profpic from '../assets/img/profpic2.png'
 import './Home.css'
 
 export default function Home() {
