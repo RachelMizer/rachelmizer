@@ -40,7 +40,7 @@
 
 .about-hero__layout {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: minmax(280px, 1fr) minmax(320px, 2fr);
   gap: 4rem;
   align-items: start;
 }
