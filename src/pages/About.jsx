@@ -103,7 +103,7 @@ export default function About() {
                 Professional Summary
               </h3>
               <p className="resume__summary">
-                Full-stack developer with a long history of building for the web, blending UI/UX design instincts with practical experience in JavaScript, Vue, React, Django, REST APIs, and modern web tooling. Strong at creating clean, intuitive interfaces, working with JSON/YAML configurations, and developing data-driven dashboards. Comfortable across the full workflow — from frontend components and responsive layouts to API integration, debugging, and iterative improvements. Experienced with Git-based collaboration, Agile environments, and a wide range of web and data tools.
+                Full-stack developer with a long history of building for the web, blending UI/UX design instincts with practical experience in JavaScript, Vue, React, Django, REST APIs, and modern web tooling. Strong at creating clean, intuitive interfaces, working with JSON/YAML configurations, and developing data-driven dashboards. Comfortable across the full workflow—from frontend components and responsive layouts to API integration, debugging, and iterative improvements. Experienced with Git-based collaboration, Agile environments, and a wide range of web and data tools. Earned an AAS in Data Science and Programming Services Support and currently progressing toward an AAS in Computer Programming &amp; Development, bringing a mix of technical depth, design thinking, and real-world problem-solving.
               </p>
             </div>
 
