@@ -45,10 +45,16 @@
   align-items: start;
 }
 
+.about-hero__left {
+  text-align: center;
+}
+
 .about-hero__identity {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  text-align: center;
+  gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -65,10 +71,8 @@
 
 .about-intro {
   font-size: 1.05rem;
-  line-height: 1.5;
+  line-height: 1.3rem;
   color: var(--color-text-secondary);
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 /* FAQ */
@@ -369,6 +373,7 @@
   font-size: 0.78rem;
   color: var(--color-text-muted);
 }
+
 
 @media (max-width: 768px) {
   .about-hero__layout {
